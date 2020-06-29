@@ -301,7 +301,7 @@ section h1 {
 .contact {
   padding: 10px;
   text-align: center;
-  height: 500px;
+  height: 400px;
 }
 
 .contact h1 {
@@ -329,6 +329,16 @@ section h1 {
 .footer-icons a:hover {
   color: 	#808080;
   transition: 0.2s;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 25px;
+  font-weight: 300;
+  height: 80px;
 }
 
 
