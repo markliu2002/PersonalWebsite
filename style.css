@@ -209,6 +209,10 @@ section h1 {
   color: var(--primary-color); 
 }
 
+.projects {
+  /* background-color: #F5F5F5; */
+}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -234,13 +238,13 @@ section h1 {
 
 .projects-list .project img {
   box-sizing: border-box;
-  border: 4px #fff solid;
+  border: 3px #000 solid;
   width: 500px;
   height: 280px;
 }
 
 .projects-list .project img:hover {
-  border: 4px #000 solid;
+  border: 3px #fff solid;
   opacity: 0.8;
   transition: 0.2s;
 }
