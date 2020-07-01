@@ -226,13 +226,45 @@ section h1 {
   margin: 0px 20px;
 }
 
-.projects-list .project img {
-  width: 500px;
+.projects-list h4 {
+  display: inline;
 }
 
+.projects-list .project img {
+  box-sizing: border-box;
+  border: 4px #fff solid;
+  width: 500px;
+  height: 280px;
+}
 
+.projects-list .project img:hover {
+  border: 4px #000 solid;
+  opacity: 0.8;
+  transition: 0.2s;
+}
 
+.projects-list .project a:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
 
+.experience {
+  padding: 20px;
+  text-align: center;
+}
+
+.experience_single .experience-img img {
+  box-sizing: border-box;
+  border: 3px #000 solid;
+  width: 250px;
+  height: 250px;
+}
+.experience_single {
+  font-size: 1.2rem;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 25px;
+}
 
 .social a {
  margin: 0 5px;
@@ -254,25 +286,14 @@ section h1 {
 }
 
 .projects {
+  
   padding: 20px;
   text-align: center;
 }
 
-.projects p {
+.project {
+  font-weight: 100;
   font-size: 1.2rem;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.experience {
-  padding: 20px;
-  text-align: center;
-}
-
-.experience p {
-  font-size: 1.2rem;
-  max-width: 1100px;
-  margin: auto;
 }
 
 .education {
