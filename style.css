@@ -185,7 +185,7 @@ section h1 {
 }
 
 .about {
-  padding: 20px;
+  padding: 30px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -210,6 +210,7 @@ section h1 {
 }
 
 .projects {
+  padding: 30px; /*This padding is the same for all sections*/
   /* background-color: #F5F5F5; */
 }
 
@@ -255,7 +256,7 @@ section h1 {
 }
 
 .experience {
-  padding: 20px;
+  padding: 30px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -303,7 +304,7 @@ section h1 {
 }
 
 .education {
-  padding: 0px;
+  padding: 30px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -326,7 +327,7 @@ section h1 {
 }
 
 .contact {
-  padding: 10px;
+  padding: 30px; /*This padding is the same for all sections*/
   text-align: center;
   height: 400px;
 }
