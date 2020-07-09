@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
 
@@ -19,7 +19,8 @@ li {
   list-style: none;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: inherit; /*Need this to not make links change color after clicking*/
   text-decoration: none;
   cursor: pointer;
@@ -48,7 +49,7 @@ a, a:visited {
 }
 
 #navigation li a:hover {
-  color: 	#808080;
+  color: #808080;
   transition: 0.2s;
 }
 
@@ -83,11 +84,9 @@ a, a:visited {
 }
 
 .scrolled li a:hover {
-  color: 	#808080;
+  color: #808080;
   transition: 0.2s;
 }
-
-
 
 section:not(:first-child) {
   margin: 60px 0px;
@@ -135,8 +134,6 @@ section h1 {
   transition: 0.2s;
 }
 
-
-
 .showcase {
   position: relative; /*relative bc we going to have stuff in it that is positioned absolute*/
   height: 100vh; /*Take take up 100% of the view height*/
@@ -156,7 +153,7 @@ section h1 {
   width: 100%;
   height: 100%;
   overflow: hidden; /*so we dont have any scroll bars*/
-  background: url('./cover.jpg') no-repeat center center/cover; /*Going to hae the cover image over it*/
+  background: url("./cover.jpg") no-repeat center center/cover; /*Going to hae the cover image over it*/
 }
 
 .video-container video {
@@ -166,18 +163,26 @@ section h1 {
   position: absolute;
   top: 50%; /*basically we always want to keep it in the middle*/
   left: 50%; /*basically we always want to keep it in the middle*/
-  transform: translate(-50%, -50%); /*basically we always want to keep it in the middle*/
+  transform: translate(
+    -50%,
+    -50%
+  ); /*basically we always want to keep it in the middle*/
 }
 
 /*This is used for overlays*/
 .video-container:after {
-  content: ''; /*Need this content property, just not going to put anything in it*/
+  content: ""; /*Need this content property, just not going to put anything in it*/
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0); /*0 for red, green, and blue to give black. Last value is transparency*/
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /*0 for red, green, and blue to give black. Last value is transparency*/
 }
 
 .content {
@@ -206,7 +211,7 @@ section h1 {
 
 .about h2 {
   margin: 30px 0;
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
 .projects {
@@ -218,14 +223,13 @@ section h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .projects-list a:visited {
-  color: #000
+  color: #000;
 }
 
-.projects-list .project{
+.projects-list .project {
   margin: 15px 25px;
 }
 
@@ -274,8 +278,8 @@ section h1 {
 }
 
 .social a {
- margin: 0 5px;
- cursor: pointer;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
 .parallax {
@@ -283,7 +287,7 @@ section h1 {
   background-image: url("uwaterloo.jpg");
 
   /* Set a specific height */
-  min-height: 500px; 
+  min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -293,8 +297,7 @@ section h1 {
 }
 
 .projects {
-  
-  padding: 20px;
+  padding: 30px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -304,7 +307,8 @@ section h1 {
 }
 
 .education {
-  padding: 30px; /*This padding is the same for all sections*/
+  padding-top: 30px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
+  padding-bottom: 30px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
   text-align: center;
 }
 
@@ -355,7 +359,7 @@ section h1 {
 }
 
 .footer-icons a:hover {
-  color: 	#808080;
+  color: #808080;
   transition: 0.2s;
 }
 
@@ -369,16 +373,9 @@ section h1 {
   height: 80px;
 }
 
-
 @media screen and (max-width: 830px) {
   .about p {
     padding: 100px;
     font-size: 1.3rem;
   }
 }
-
-
-
-
-
-
