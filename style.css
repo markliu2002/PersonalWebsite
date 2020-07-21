@@ -134,6 +134,57 @@ section h1 {
   transition: 0.2s;
 }
 
+/* Arrow */
+.scroll-down {
+  position: absolute;
+  bottom: 5rem; /*5 rem from bottom of screen*/
+  left: 50%; /*Make it centered horizontally*/
+  transform: translateX(-50%); /*Make it centered horizontally*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mouse {
+  width: 2.5rem;
+  height: 5rem;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+
+.mouse span {
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 0.75s linear infinite; /*Animation called move-wheel, takes 1 second*/
+}
+
+.arrow span {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid transparent;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  transform: rotate(45deg);
+}
+
+@keyframes move-wheel {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+}
+
 .showcase {
   position: relative; /*relative bc we going to have stuff in it that is positioned absolute*/
   height: 100vh; /*Take take up 100% of the view height*/
