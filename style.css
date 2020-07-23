@@ -241,7 +241,7 @@ section h1 {
 }
 
 .about {
-  padding: 30px; /*This padding is the same for all sections*/
+  padding: 50px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -266,7 +266,7 @@ section h1 {
 }
 
 .projects {
-  padding: 30px; /*This padding is the same for all sections*/
+  padding: 50px; /*This padding is the same for all sections*/
   /* background-color: #F5F5F5; */
 }
 
@@ -311,7 +311,7 @@ section h1 {
 }
 
 .experience {
-  padding: 30px; /*This padding is the same for all sections*/
+  padding: 50px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -348,7 +348,7 @@ section h1 {
 }
 
 .projects {
-  padding: 30px; /*This padding is the same for all sections*/
+  padding: 50px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -358,8 +358,8 @@ section h1 {
 }
 
 .education {
-  padding-top: 30px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
-  padding-bottom: 30px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
+  padding-top: 50px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
+  padding-bottom: 50px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
   text-align: center;
 }
 
@@ -382,7 +382,7 @@ section h1 {
 }
 
 .contact {
-  padding: 30px; /*This padding is the same for all sections*/
+  padding: 50px; /*This padding is the same for all sections*/
   text-align: center;
   height: 400px;
 }
@@ -426,7 +426,10 @@ section h1 {
 
 @media screen and (max-width: 830px) {
   .about p {
-    padding: 100px;
+    padding: 30px;
     font-size: 1.3rem;
+  }
+  .hero {
+    display: none;
   }
 }
