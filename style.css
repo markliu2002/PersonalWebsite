@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+/* NEED THIS SO USER CAN'T SCROLL LEFT AND RIGHT ON MOBILE */
+html {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,7 +32,7 @@ a:visited {
 }
 
 #navigation {
-  word-spacing: 8px;
+  word-spacing: 5%;
   font-weight: 600;
   position: fixed;
   top: 0;
@@ -54,7 +59,7 @@ a:visited {
 }
 
 .scrolled {
-  word-spacing: 8px;
+  word-spacing: 5%;
   font-weight: 700;
   position: fixed;
   top: 0;
@@ -247,8 +252,10 @@ section h1 {
 
 .about .profilepic {
   border-radius: 50%;
-  width: 199px;
-  height: 199px;
+  width: 15%;
+  height: 15%;
+  min-width: 160px;
+  min-height: 160px;
   margin-bottom: 15px;
 }
 
@@ -458,11 +465,40 @@ section h1 {
 }
 
 @media screen and (max-width: 830px) {
+  /*Hide the navbar*/
+  #navigation {
+    display: none;
+  }
+  /* Adjust the paragraph in the "about-section" */
   .about p {
-    padding: 30px;
+    padding: 5px;
+    max-width: 100%;
     font-size: 1.3rem;
   }
+  /*Hide the animation on the homepage which prompts the user to scroll down*/
   .hero {
     display: none;
+  }
+  /* Adjust the waterloo banner so it doesn't get cut off */
+  .waterloo-banner {
+    width: 80%;
+    height: 20%;
+    max-width: 300px;
+    max-height: 200px;
+  }
+  /* For all the sections (about-section, projects-section, etc.) make the title font smaller */
+  section h1 {
+    font-size: 50px;
+  }
+  /* hide the "bachelor of computing and financial management" */
+  .education h2 {
+    display: none;
+  }
+  /* Adjust the size of the images for each project so they don't get cut off */
+  .project img {
+    width: 80%;
+    height: 20%;
+    max-width: 300px;
+    max-height: 200px;
   }
 }
