@@ -13,13 +13,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="mark_logo_thumbnailPNG.png" />
+    <link rel="icon" href="./assets/mark_logo_thumbnailPNG.png" />
     <title>Mark Liu</title>
   </head>
   <body>
     <section class="showcase">
       <div class="video-container">
-        <video src="video.mov" autoplay muted loop></video>
+        <video src="./assets/video.mov" autoplay muted loop></video>
       </div>
       <div class="content">
         <div>
@@ -65,15 +65,13 @@
 
     <section class="about" id="about-area">
       <h1>About</h1>
-      <img class="profilepic" src="profilepic.jpg" alt="profilepic" />
+      <img class="profilepic" src="./assets/profilepic.jpg" alt="profilepic" />
       <p>
         Hi! My name is Mark and I am an incoming Computing and Financial
         Management student at the University of Waterloo. I enjoy learning about
-        finance, machine learning, web development, and app development. As
-        someone who is dedicated to expanding their knowledge in software
-        development and finance, I am always exploring new technologies and
-        striving to improve my skillset. Check out some of my projects and
-        experiences below!
+        finance, machine learning, web development, and app development. I love
+        what I do I am always exploring new technologies and striving to improve
+        my skillset. Check out some of my projects and experiences below!
       </p>
     </section>
 
@@ -81,151 +79,213 @@
       <h1>Personal Projects</h1>
       <div class="projects-list">
         <div class="project">
-          <h2>Marketplace to Buy & Sell Textbooks</h2>
-          <h5>React, Redux, Express, Node, MongoDB, Amazon S3, JWT</h5>
-          <div>
+          <h2>📚BuySellBooks</h2>
+          <div class="container">
             <a
               href="https://www.youtube.com/watch?v=DBpFM08OqQY"
               target="_blank"
               ><img src="./projects/buysellbooks_cover.png" alt=""
             /></a>
+            <div class="overlay">
+              <div class="text">
+                📚BuySellBooks is a fully functional online marketplace for
+                students to buy and sell used textbooks. Built using
+                <b> React</b>,<b> Redux</b>,<b> Express</b>,<b> Node</b>,<b>
+                  MongoDB</b
+                >,<b> Amazon S3</b>, and<b> JSON Web Tokens</b>.
+              </div>
+            </div>
           </div>
-          <h4>
+          <h5>
             <a
               href="https://github.com/markliu2002/BuySellBooks"
               target="_blank"
               >🖥️Source Code</a
             >
-          </h4>
-          <h4>
+          </h5>
+          <h5>
             <a
               href="https://www.youtube.com/watch?v=DBpFM08OqQY"
               target="_blank"
               >🌐Demo</a
             >
-          </h4>
+          </h5>
         </div>
 
         <div class="project">
-          <h2>Stock Predictor</h2>
-          <h5>Python (Pandas, NumPy, Sklearn)</h5>
-          <div>
+          <h2>💻Connectify</h2>
+          <div class="container">
+            <a href="https://github.com/markliu2002/connectify" target="_blank"
+              ><img src="./projects/connectify_cover.png" alt=""
+            /></a>
+            <div class="overlay">
+              <div class="text">
+                💻Connectify is a website for group video conferencing and
+                messaging. Built using <b> React</b>,<b> Node</b>, and<b>
+                  Socket.IO</b
+                >.
+              </div>
+            </div>
+          </div>
+          <h5>
+            <a href="https://github.com/markliu2002/connectify" target="_blank"
+              >🖥️Source Code</a
+            >
+          </h5>
+        </div>
+
+        <div class="project">
+          <h2>📈Stock Predictor</h2>
+          <div class="container">
             <a
               href="https://github.com/markliu2002/StockPredictor"
               target="_blank"
               ><img src="./projects/stockpredictor_cover.jpg" alt=""
             /></a>
+            <div class="overlay">
+              <div class="text">
+                📈Stock predictor which uses <b> Pandas</b>, <b>NumPy</b>, and
+                <b>Sklearn</b>
+                to model with Support Vector Regression, Decision Tree
+                Regression, and many more to predict a stock’s adjusted closing
+                price with an accuracy of <b> 93%</b>.
+              </div>
+            </div>
           </div>
-          <h4>
+          <h5>
             <a
               href="https://github.com/markliu2002/StockPredictor"
               target="_blank"
               >🖥️Source Code</a
             >
-          </h4>
+          </h5>
         </div>
 
         <div class="project">
-          <h2>Streamer Networking Website</h2>
-          <h5>MongoDB, Express, Node, React</h5>
-          <div>
+          <h2>🤝StreamerConnect</h2>
+          <div class="container">
             <a
               href="https://github.com/markliu2002/StreamerConnect"
               target="_blank"
               ><img src="./projects/streamerconnect_cover.jpg" alt=""
             /></a>
+            <div class="overlay">
+              <div class="text">
+                🤝StreamerConnect is a website to help small Twitch streamers
+                network and collaborate with each other. Built with
+                <b> React</b>, <b> Express</b>, <b>Node</b>, and <b>MongoDB</b>.
+              </div>
+            </div>
           </div>
-          <h4>
+          <h5>
             <a
               href="https://github.com/markliu2002/StreamerConnect"
               target="_blank"
               >🖥️Source Code</a
             >
-          </h4>
+          </h5>
         </div>
 
         <div class="project">
-          <h2>Art Portfolio Website</h2>
-          <h5>HTML, CSS, JavaScript</h5>
-          <div>
-            <div>
-              <a href="https://markliu2002.github.io/" target="_blank"
-                ><img src="./projects/noxciel_cover.png" alt=""
-              /></a>
-            </div>
-            <h4>
-              <a
-                href="https://github.com/markliu2002/markliu2002.github.io"
-                target="_blank"
-                >🖥️Source Code</a
-              >
-            </h4>
-            <h4>
-              <a href="https://markliu2002.github.io/" target="_blank"
-                >🌐Demo</a
-              >
-            </h4>
-          </div>
-        </div>
-
-        <div class="project">
-          <h2>Study App</h2>
-          <h5>Flutter, Dart</h5>
-          <div>
+          <h2>⏱️Smart Focus</h2>
+          <div class="container">
             <a
               href="https://github.com/markliu2002/smart-focus-pomodoro-timer"
               target="_blank"
               ><img src="./projects/smartfocus_cover.png" alt=""
             /></a>
+            <div class="overlay">
+              <div class="text">
+                ⏱️Smart Focus is a time management application built with
+                <b> Flutter </b>to increase productivity based on the Pomodoro
+                technique. 🏆<b>1st place</b> at Apps By Teens Hackathon 2020.
+              </div>
+            </div>
           </div>
-          <h4>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.smartfocus.android.abc"
-              target="_blank"
-              >🛍️Google Play Store</a
-            >
-          </h4>
-          <h4>
+          <h5>
             <a
               href="https://github.com/markliu2002/smart-focus-pomodoro-timer"
               target="_blank"
               >🖥️Source Code</a
             >
-          </h4>
+          </h5>
+          <h5>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.smartfocus.android.abc"
+              target="_blank"
+              >🛍️Google Play Store</a
+            >
+          </h5>
         </div>
 
         <div class="project">
-          <h2>Personal Finance Tracker</h2>
-          <h5>React</h5>
-          <div>
+          <h2>🎨Art Portfolio Website</h2>
+          <div class="container">
+            <a href="https://markliu2002.github.io/" target="_blank"
+              ><img src="./projects/noxciel_cover.png" alt=""
+            /></a>
+            <div class="overlay">
+              <div class="text">
+                🎨Art portfolio website made with <b> HTML</b>,<b> CSS</b>, and
+                <b>JavaScript</b>.
+              </div>
+            </div>
+          </div>
+          <h5>
+            <a
+              href="https://github.com/markliu2002/markliu2002.github.io"
+              target="_blank"
+              >🖥️Source Code</a
+            >
+          </h5>
+          <h5>
+            <a href="https://markliu2002.github.io/" target="_blank">🌐Demo</a>
+          </h5>
+        </div>
+
+        <div class="project">
+          <h2>💸Personal Finance Tracker</h2>
+          <div class="container">
             <a
               href="https://github.com/markliu2002/PersonalFinanceTracker"
               target="_blank"
               ><img src="./projects/financetracker_cover.jpg" alt=""
             /></a>
+            <div class="overlay">
+              <div class="text">
+                💸Personal finance tracker built with <b> React </b>that allows
+                users to record, organize, and sort through their expenses.
+              </div>
+            </div>
           </div>
-          <h4>
+          <h5>
             <a
               href="https://github.com/markliu2002/PersonalFinanceTracker"
               target="_blank"
               >🖥️Source Code</a
             >
-          </h4>
+          </h5>
         </div>
 
         <div class="project">
-          <h2>Word Guessing Game</h2>
-          <h5>Java</h5>
-          <div>
+          <h2>❓Word Guessing Game</h2>
+          <div class="container">
             <a href="https://github.com/markliu2002/WordGuesser" target="_blank"
               ><img src="./projects/wordguesser_cover.jpg" alt=""
             /></a>
+            <div class="overlay">
+              <div class="text">
+                ❓Two player word guessing game built using <b> Java</b>. Player
+                1 can enter words in a .txt file and the game will pick a word
+                for Player 2 to guess depending on the category and word length.
+              </div>
+            </div>
           </div>
-          <h4>
+          <h5>
             <a href="https://github.com/markliu2002/WordGuesser" target="_blank"
               >🖥️Source Code</a
             >
-          </h4>
+          </h5>
         </div>
       </div>
     </section>
@@ -260,7 +320,11 @@
 
     <section class="education" id="education-area">
       <h1>Education</h1>
-      <img class="waterloo-banner" src="uwaterlooBanner.jpg" alt="banner" />
+      <img
+        class="waterloo-banner"
+        src="./assets/uwaterlooBanner.jpg"
+        alt="banner"
+      />
       <h2>Bachelor of Computing and Financial Management</h2>
       <h2>2020 - 2025</h2>
 
