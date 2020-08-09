@@ -32,16 +32,16 @@ a:visited {
 }
 
 #navigation {
-  word-spacing: 5%;
+  width: 100%;
+  word-spacing: 35px;
   font-weight: 600;
   position: fixed;
   top: 0;
   right: 0;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
-  padding: 5px;
-  width: 100%;
+  /* justify-content: space-between; */
+  padding: 10px;
   z-index: 11;
 }
 
@@ -50,12 +50,12 @@ a:visited {
   display: inline-block;
   padding: 0 5px;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 #navigation li a:hover {
   color: #808080;
-  transition: 0.2s;
+  transition: 0.05s;
 }
 
 .scrolled {
@@ -90,7 +90,7 @@ a:visited {
 
 .scrolled li a:hover {
   color: #808080;
-  transition: 0.2s;
+  transition: 0.05s;
 }
 
 section:not(:first-child) {
@@ -136,7 +136,7 @@ section h1 {
 
 .content .icons a:hover {
   color: #808080;
-  transition: 0.2s;
+  transition: 0.05s;
 }
 
 /* Arrow */
@@ -246,7 +246,7 @@ section h1 {
 }
 
 .about {
-  padding: 50px; /*This padding is the same for all sections*/
+  padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -260,10 +260,10 @@ section h1 {
 }
 
 .about p {
+  text-align: center;
   font-size: 1.45rem;
   max-width: 1100px;
   padding: 0 220px;
-  text-align: left;
   margin: auto;
 }
 
@@ -273,7 +273,7 @@ section h1 {
 }
 
 .projects {
-  padding: 50px; /*This padding is the same for all sections*/
+  padding: 60px; /*This padding is the same for all sections*/
   /* background-color: #F5F5F5; */
 }
 
@@ -351,7 +351,7 @@ section h1 {
 }
 
 .experience {
-  padding: 50px; /*This padding is the same for all sections*/
+  padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -388,7 +388,7 @@ section h1 {
 }
 
 .projects {
-  padding: 50px; /*This padding is the same for all sections*/
+  padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
@@ -398,8 +398,8 @@ section h1 {
 }
 
 .education {
-  padding-top: 50px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
-  padding-bottom: 50px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
+  padding-top: 60px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
+  padding-bottom: 60px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
   text-align: center;
 }
 
@@ -422,9 +422,9 @@ section h1 {
 }
 
 .contact {
-  padding: 50px; /*This padding is the same for all sections*/
+  padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
-  height: 400px;
+  height: 300px;
 }
 
 .contact h1 {
@@ -451,7 +451,7 @@ section h1 {
 
 .footer-icons a:hover {
   color: #808080;
-  transition: 0.2s;
+  transition: 0.05s;
 }
 
 .footer {
@@ -465,15 +465,23 @@ section h1 {
 }
 
 @media screen and (max-width: 830px) {
-  /*Hide the navbar*/
+  /*Adjust the navbar*/
   #navigation {
-    display: none;
+    width: 100%;
+    word-spacing: 1.5px;
+    padding: 5px;
+  }
+
+  #navigation li {
+    padding: 0 5px;
+    font-size: 18px;
   }
   /* Adjust the paragraph in the "about-section" */
   .about p {
     padding: 5px;
     max-width: 100%;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    max-width: 500px;
   }
   /*Hide the animation on the homepage which prompts the user to scroll down*/
   .hero {
@@ -490,18 +498,46 @@ section h1 {
   section h1 {
     font-size: 50px;
   }
-  /* hide the "bachelor of computing and financial management" */
+  /* Adjust the "bachelor of computing and financial management" */
   .education h2 {
-    display: none;
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 15px;
   }
   /* Adjust the size of the images for each project so they don't get cut off */
   .project img {
     width: 80%;
     height: 20%;
-    max-width: 300px;
-    max-height: 200px;
+    max-width: 340px;
+    max-height: 190px;
   }
   .overlay {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /*Adjust the navbar*/
+  #navigation {
+    width: 100%;
+    word-spacing: 2px;
+    padding: 3px;
+  }
+
+  .about p {
+    padding: 4px;
+    max-width: 100%;
+    font-size: 0.9rem;
+    max-width: 480px;
+  }
+
+  #navigation li {
+    padding: 0 5px;
+    font-size: 12px;
+  }
+
+  .contact h1 {
+    margin-bottom: 30px;
   }
 }
