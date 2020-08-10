@@ -40,7 +40,6 @@ a:visited {
   right: 0;
   box-sizing: border-box;
   display: flex;
-  /* justify-content: space-between; */
   padding: 10px;
   z-index: 11;
 }
@@ -59,19 +58,21 @@ a:visited {
 }
 
 .scrolled {
-  word-spacing: 5%;
+  /* word-spacing: 1px; */
   font-weight: 700;
   position: fixed;
   top: 0;
   right: 0;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 5px;
   width: 100%;
   background-color: white;
   z-index: 11;
-  box-shadow: 0px 4px 7px #777;
+  -webkit-box-shadow: 0px -1px 19px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 19px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 19px -3px rgba(0, 0, 0, 0.75);
   transition: background-color 0.4s ease-out;
 }
 
@@ -424,7 +425,7 @@ section h1 {
 .contact {
   padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
-  height: 300px;
+  height: 350px;
 }
 
 .contact h1 {
@@ -455,6 +456,7 @@ section h1 {
 }
 
 .footer {
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -468,8 +470,8 @@ section h1 {
   /*Adjust the navbar*/
   #navigation {
     width: 100%;
-    word-spacing: 1.5px;
-    padding: 5px;
+    word-spacing: 1px;
+    padding: 4px;
   }
 
   #navigation li {
@@ -496,7 +498,7 @@ section h1 {
   }
   /* For all the sections (about-section, projects-section, etc.) make the title font smaller */
   section h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   /* Adjust the "bachelor of computing and financial management" */
   .education h2 {
@@ -521,8 +523,8 @@ section h1 {
   /*Adjust the navbar*/
   #navigation {
     width: 100%;
-    word-spacing: 2px;
-    padding: 3px;
+    word-spacing: 1px;
+    /* padding: 0px; */
   }
 
   .about p {
