@@ -351,6 +351,10 @@ section h1 {
   text-align: center;
 }
 
+.smooth-claiminal-text {
+  font-size: 18.5px;
+}
+
 .experience {
   padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
