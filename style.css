@@ -278,6 +278,15 @@ section h1 {
   /* background-color: #F5F5F5; */
 }
 
+.devpost-link {
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid #9de1d0;
+  background-color: #e8f8f4;
+  border-radius: 20px;
+  margin: 10px 0px;
+}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -290,16 +299,17 @@ section h1 {
 
 /* How far apart each of the projects are */
 .projects-list .project {
-  margin: 20px;
+  margin: 17px 16px;
 }
 
+/* These are the links to source code, demo, etc */
 .projects-list h5 {
-  padding: 3px;
-  display: inline;
-  margin: 0 3px;
+  padding: 5px;
+  display: inline-block;
+  margin: 3px !important;
   border: 1px solid #9de1d0;
   background-color: #e8f8f4;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .projects-list .project img {
