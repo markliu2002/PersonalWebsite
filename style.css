@@ -299,7 +299,7 @@ section h1 {
 
 /* How far apart each of the projects are */
 .projects-list .project {
-  margin: 17px 16px;
+  margin: 25px 35px;
 }
 
 /* These are the links to source code, demo, etc */
@@ -314,7 +314,7 @@ section h1 {
 
 .projects-list .project img {
   /* box-sizing: border-box; */
-  border: 3px #000 solid;
+  border: 3px #000 solid; /* Same border width as Work Experience section */
   width: 500px;
   height: 280px;
 }
@@ -380,7 +380,7 @@ section h1 {
   font-size: 1.2rem;
   max-width: 1100px;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
 }
 
 .social a {
