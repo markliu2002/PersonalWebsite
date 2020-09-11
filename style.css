@@ -246,12 +246,12 @@ section h1 {
   z-index: 10; /*Text was in place but behind video, need this to bring it forward*/
 }
 
-.about {
+.about-section {
   padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
 }
 
-.about .profilepic {
+.about-section .profilepic {
   border-radius: 50%;
   width: 15%;
   height: 15%;
@@ -260,7 +260,7 @@ section h1 {
   margin-bottom: 15px;
 }
 
-.about p {
+.about-section p {
   text-align: center;
   font-size: 1.45rem;
   max-width: 1100px;
@@ -268,12 +268,12 @@ section h1 {
   margin: auto;
 }
 
-.about h2 {
+.about-section h2 {
   margin: 30px 0;
   color: var(--primary-color);
 }
 
-.projects {
+.projects-section {
   padding: 60px; /*This padding is the same for all sections*/
   /* background-color: #F5F5F5; */
 }
@@ -365,7 +365,7 @@ section h1 {
   font-size: 18.5px;
 }
 
-.experience {
+.experience-section {
   padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
 }
@@ -402,7 +402,7 @@ section h1 {
   background-size: cover;
 }
 
-.projects {
+.projects-section {
   padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
 }
@@ -412,7 +412,7 @@ section h1 {
   font-size: 1.2rem;
 }
 
-.education {
+.education-section {
   padding-top: 60px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
   padding-bottom: 60px; /*This padding is the same for all sections but we only want top and bottom bc of parallax*/
   text-align: center;
@@ -423,26 +423,26 @@ section h1 {
   height: 100px;
 }
 
-.education p {
+.education-section p {
   font-size: 1.2rem;
   max-width: 1100px;
   margin: auto;
 }
 
-.education h2 {
+.education-section h2 {
   font-weight: 300;
   font-size: 30px;
   line-height: 1.2;
   margin-bottom: 15px;
 }
 
-.contact {
+.contact-section {
   padding: 60px; /*This padding is the same for all sections*/
   text-align: center;
   height: 350px;
 }
 
-.contact h1 {
+.contact-section h1 {
   margin-bottom: 90px;
 }
 
@@ -493,7 +493,7 @@ section h1 {
     font-size: 18px;
   }
   /* Adjust the paragraph in the "about-section" */
-  .about p {
+  .about-section p {
     padding: 5px;
     max-width: 100%;
     font-size: 1rem;
@@ -515,7 +515,7 @@ section h1 {
     font-size: 40px;
   }
   /* Adjust the "bachelor of computing and financial management" */
-  .education h2 {
+  .education-section h2 {
     font-weight: 350;
     font-size: 15px;
     line-height: 1;
@@ -541,7 +541,7 @@ section h1 {
     /* padding: 0px; */
   }
 
-  .about p {
+  .about-section p {
     padding: 4px;
     max-width: 100%;
     font-size: 0.9rem;
@@ -553,7 +553,7 @@ section h1 {
     font-size: 12px;
   }
 
-  .contact h1 {
+  .contact-section h1 {
     margin-bottom: 30px;
   }
 }
